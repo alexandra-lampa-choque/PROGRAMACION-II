@@ -1,0 +1,18 @@
+from fraccion import Fraccion
+f1 = Fraccion(1, 4)
+f2 = Fraccion(4, 3)
+
+print("f1 =", f1)
+print("f2 =", f2)
+print("Suma:", f1 + f2)
+print("Resta:", f1 - f2)
+print("Multiplicación:", f1 * f2)
+print("División:", f1 / f2)
+print("¿Son iguales?:", f1 == f2)
+print("Decimal f1:", f1.convertirADecimal())
+f3 = Fraccion(4, 1)
+print("¿Son inversos?:", f1.esInverso(f3))
+f4 = Fraccion.parseFraccion("-2/3")
+print("Parse:", f4)
+f5 = Fraccion(14, 28)
+print("Simplificada:", f5.simplifica())
